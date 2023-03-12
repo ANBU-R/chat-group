@@ -24,6 +24,10 @@ const userSchema = new mongoose.Schema({
     minLength: 8,
     required: [true, "Password is required"],
   },
+  channels: {
+    type: [mongoose.Types.ObjectId],
+    ref: "Channel",
+  },
 });
 userSchema.pre("save", async function (next) {
   if (this.isModified("password")) {
