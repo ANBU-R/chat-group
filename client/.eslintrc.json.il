@@ -5,12 +5,7 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": [
-    "airbnb",
-    "prettier",
-    "plugin:react/recommended",
-    "plugin:sonarjs/recommended"
-  ],
+  "extends": ["airbnb", "prettier", "plugin:sonarjs/recommended"],
   "plugins": ["prettier", "sonarjs"],
   "parserOptions": {
     "ecmaVersion": "latest"
